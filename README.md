@@ -1,117 +1,153 @@
-# 📊 H-1B Visa Performance Metrics Dashboard (FY25)
+# 📊 H-1B Visa Performance Metrics — FY2025
 
-This project presents an interactive data visualization dashboard analyzing **H-1B Visa applications for Fiscal Year 2025**. It highlights key metrics such as application volume, approval rates, job roles, employers, wages, and geographic distribution.
+## 📌 Project Overview
+This project presents a comprehensive analysis of the H-1B visa program for Fiscal Year 2025, built on a dataset of over **453,000 applications**.
 
----
-
-## 🚀 Project Overview
-
-The dashboard provides insights into:
-- Total H-1B applications, approvals, and denials
-- Approval rate trends
-- Top job roles and employers sponsoring H-1B visas
-- Average wages across job categories
-- Geographic distribution of approved applications
+The dashboard provides a macro-level view of employer demand, job roles, salary distribution, and geographic trends, enabling deeper insights into the U.S. labor market for high-skilled foreign workers.
 
 ---
 
-## 📌 Key Metrics
-
-| Metric                | Value   |
-|----------------------|--------|
-| Total Applicants     | 453K   |
-| Total Approvals      | 420K   |
-| Total Denials        | 2,807  |
-| Approval Rate        | 92.78% |
+## 🎯 Objectives
+- Analyze approval trends and case outcomes  
+- Identify top job roles and sponsoring employers  
+- Explore salary distribution across occupations  
+- Map geographic concentration of H-1B employment  
+- Deliver an interactive dashboard for decision-making  
 
 ---
 
-## 📊 Dashboard Features
+## 📈 Key Performance Indicators (KPIs)
 
-### ✅ Case Status Breakdown
-- Certified  
-- Certified – Withdrawn  
-- Denied  
-- Withdrawn  
-
-### 💼 Top H-1B Job Titles
-- Software Engineer  
-- Software Developer  
-- Senior Software Engineer  
-- Assistant Professor  
-- Data Engineer  
-
-### 🏢 Top H-1B Employers
-- Amazon  
-- Cognizant  
-- Microsoft  
-- Tata Consultancy Services  
-- Ernst & Young  
-- Infosys  
-
-### 💰 Average Wage Insights
-- Highest salaries observed in specialized medical and technical roles  
-- Competitive salaries in software and engineering roles  
-
-### 🌍 Geographic Insights
-- Top cities with H-1B approvals:
-  - New York  
-  - Austin  
-  - Seattle  
-  - San Francisco  
-  - San Jose  
-  - Chicago  
-
-- Global distribution visualized using map-based analytics  
+| Metric | Value |
+|------|------|
+| Total Applicants | **453K** |
+| Total Approvals | **420K** |
+| Total Denials | **2,807** |
+| Approval Rate | **92.78%** |
 
 ---
 
-## 🛠️ Tools & Technologies
+## 🔍 Key Insights
 
-- Data Visualization: Power BI / Tableau *(update based on your tool)*
-- Data Processing: Python / Excel
-- Dataset: H-1B Visa Application Data (FY25)
+### 💼 Top Job Roles
+- **Software Engineers** dominate with ~21K cases  
+- Followed by:
+  - Software Developers (~16K)  
+  - Senior Software Engineers (~6K)  
 
----
-
-## 📷 Dashboard Preview
-
-![H-1B Dashboard](https://github.com/rishabhkumarprabhakar-art/H1B-VISA-ANALYSIS-FY2025/blob/main/H1B-VISA-ANALYSIS-FY2025.jpeg)
+👉 Indicates strong demand for tech talent in software development  
 
 ---
 
-## 🎯 Use Cases
+### 🏢 Leading Employers
+- Amazon — 11.1K  
+- Cognizant — 9.0K  
+- Microsoft — 7.1K  
+- Tata Consultancy Services & Ernst & Young also rank highly  
 
-- Analyze hiring trends in the U.S. tech industry  
-- Understand employer sponsorship patterns  
-- Explore salary benchmarks across roles  
-- Identify top cities for H-1B opportunities  
-
----
-
-## 📈 Future Improvements
-
-- Add year-over-year comparison  
-- Include predictive analytics for approval trends  
-- Integrate real-time datasets  
+👉 Large multinational and tech firms are primary visa sponsors  
 
 ---
 
-## 🤝 Contributing
+### 💰 Salary Insights
+- Highest wages observed in specialized healthcare roles:
+  - Cardiology / Orthopedics (~$500K)  
+- Tech roles show high volume but relatively moderate salary bands  
 
-Contributions are welcome! Feel free to fork this repo and submit a pull request.
-
----
-
-## 📬 Contact
-
-If you’d like to collaborate or discuss opportunities:
-
-- LinkedIn: *(Add your profile link)*
-- Email: *(Add your email)*
+👉 Highlights a value vs. volume divide in labor demand  
 
 ---
 
-## ⭐ If you like this project
+### 🌍 Geographic Trends
+- New York leads with ~25K approvals  
+- Other major hubs:
+  - Austin (~11K)  
+  - Seattle (~11K)  
+  - San Francisco & San Jose (~8K each)  
 
-Give it a ⭐ on GitHub and share your feedback!
+👉 H-1B jobs remain concentrated in major tech and economic hubs  
+
+---
+
+### 🗺️ Geospatial Distribution
+- Interactive map shows global spread of worksite cities  
+- Strong clustering in North America and coastal U.S. regions  
+
+---
+
+## 🧠 The Economic Narrative
+> This analysis highlights a shifting U.S. economy. While software engineering roles dominate in volume, the highest wages are concentrated in specialized healthcare professions.  
+>
+> Additionally, despite the rise of remote work, H-1B employment remains heavily clustered in traditional economic and technology hubs such as New York, Seattle, and Austin.
+
+---
+
+## 🛠️ Technical Stack
+
+| Layer | Tools Used |
+|------|-----------|
+| Data Source | U.S. Department of Labor (OFLC Disclosure Data) |
+| Data Cleaning | SQL (data transformation, filtering, normalization) |
+| Data Modeling | Power BI (DAX measures, relationships) |
+| Visualization | Power BI Dashboard |
+| Optional Processing | Python (Pandas) for exploratory analysis |
+
+---
+
+## ⚙️ Data Pipeline
+
+1. **Raw Data Ingestion**
+   - Imported large CSV dataset from OFLC  
+
+2. **Data Cleaning (SQL)**
+   - Removed null/invalid records  
+   - Standardized job titles & employer names  
+   - Filtered relevant case statuses  
+   - Structured data for analysis  
+
+3. **Data Modeling (Power BI)**
+   - Built relationships  
+   - Created DAX measures:
+     - Approval Rate %
+     - Total Cases  
+     - Employer Rankings  
+
+4. **Dashboard Development**
+   - KPI cards  
+   - Job & employer ranking visuals  
+   - Salary distribution charts  
+   - Interactive map  
+
+---
+
+## 📸 Dashboard Preview
+![Dashboard Preview]()
+
+---
+
+## 🚀 How to Use
+1. Clone the repository  
+2. Open the `.pbix` file in Power BI Desktop  
+3. (Optional) Run SQL scripts to reproduce cleaned dataset  
+4. Use filters to explore:
+   - Case Status  
+   - Job Titles  
+   - Employers  
+   - Locations  
+
+---
+
+## 📊 Features
+- Interactive filtering by case status  
+- Employer & job ranking visuals  
+- Salary comparison across occupations  
+- Geographic heatmap of job locations  
+- Clean and executive-friendly layout  
+
+---
+
+## 🔮 Future Improvements
+- Add year-over-year trend analysis  
+- Build predictive approval models  
+- Integrate real-time visa data updates  
+- Enhance role classification using NLP
