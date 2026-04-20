@@ -76,7 +76,7 @@ The dashboard provides insights into:
 
 ## 📷 Dashboard Preview
 
-![H-1B Dashboard](./dashboard.png)
+![H-1B Dashboard](https://github.com/rishabhkumarprabhakar-art/H1B-VISA-ANALYSIS-FY2025/blob/main/H1B-VISA-ANALYSIS-FY2025.jpeg)
 
 ---
 
