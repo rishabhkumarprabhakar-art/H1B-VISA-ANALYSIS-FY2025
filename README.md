@@ -121,7 +121,7 @@ The dashboard provides a macro-level view of employer demand, job roles, salary 
 ---
 
 ## 📸 Dashboard Preview
-![Dashboard Preview]()
+![Dashboard Preview](https://github.com/rishabhkumarprabhakar-art/H1B-VISA-ANALYSIS-FY2025/blob/main/H1B-VISA-ANALYSIS-FY2025.jpeg)
 
 ---
 
